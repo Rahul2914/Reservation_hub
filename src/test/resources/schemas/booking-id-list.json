@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Booking id list",
+  "description": "Response of GET /booking. An array of id wrappers, possibly empty.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["bookingid"],
+    "properties": {
+      "bookingid": {
+        "type": "integer",
+        "minimum": 1
+      }
+    },
+    "additionalProperties": false
+  }
+}

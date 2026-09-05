@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Sequential by design: no shared-instance load test or parallel fixtures. -->
+<suite name="Reservation Hub" parallel="none">
+    <test name="Bookings regression">
+        <classes>
+            <class name="com.reservationhub.api.tests.AuthTests"/>
+            <class name="com.reservationhub.api.tests.BookingTests"/>
+            <class name="com.reservationhub.api.tests.ValidationTests"/>
+        </classes>
+    </test>
+</suite>

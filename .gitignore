@@ -1,0 +1,27 @@
+# Build output
+target/
+
+# Allure command line, downloaded on demand by allure-maven
+.allure/
+
+# Scratch run logs
+*.log
+fails.txt
+
+# Local Maven wrapper scratch
+bin/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# NOTE: report/ is intentionally NOT ignored. The generated test report is a
+# deliverable - a reviewer must be able to open it straight from the repo.
